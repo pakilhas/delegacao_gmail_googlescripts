@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      label {
+        font-weight: bold;
+      }
+      input[type="email"], input[type="submit"] {
+        width: 100%;
+        padding: 8px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Delegação de Acesso ao Gmail</h2>
+    <form id="delegationForm">
+      <label for="senderEmail">E-mail do Remetente:</label>
+      <input type="email" id="senderEmail" name="senderEmail" required>
+      
+      <label for="delegateEmail">E-mail do Delegado:</label>
+      <input type="email" id="delegateEmail" name="delegateEmail" required>
+      
+      <input type="submit" value="Delegar Acesso">
+    </form>
+
+    <script>
+      document.getElementById('delegationForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const senderEmail = document.getElementById('senderEmail').value;
+        const delegateEmail = document.getElementById('delegateEmail').value;
+        google.script.run.withSuccessHandler(function(response) {
+          alert(response);
+        }).delegateAccess(senderEmail, delegateEmail);
+      });
+    </script>
+  </body>
+</html>

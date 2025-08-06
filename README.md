@@ -46,6 +46,8 @@ Este projeto permite delegar o acesso a uma conta do Gmail para outro usuário u
 5. No campo de escopos, insira: `https://www.googleapis.com/auth/gmail.settings.sharing`
 6. Clique em **Autorizar**.
 
+
+
 ### 4. Configurar o Projeto no Google Apps Script
 
 1. Crie um novo projeto no [Google Apps Script](https://script.google.com/).
@@ -61,3 +63,14 @@ Este projeto permite delegar o acesso a uma conta do Gmail para outro usuário u
    var PRIVATE_KEY = `-----BEGIN PRIVATE KEY-----
    SUA_CHAVE_PRIVADA_AQUI
    -----END PRIVATE KEY-----`;
+   
+### 6. Libera o Auth2 na conta de e-mail que criou no Google Cloud 
+ 1. Entra na conta que precisa liberar
+ 2. vai em contas de serviço
+ 3. configurações avançadas e ativa o Auth2
+
+### 5. Adicionar a biblioteca do Auth2 e API do Gmail
+
+1. ID: 1B7FSrk5Zi6L1rSxxTDgDEUsPzlukDsi4KGuTMorsTQHhGBzBkMun4iDF
+2. Ir no Google Cloud e ativar API do gmail
+3. Adicionar em Serviços a API Gmail

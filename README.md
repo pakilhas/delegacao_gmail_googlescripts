@@ -64,12 +64,20 @@ Este projeto permite delegar o acesso a uma conta do Gmail para outro usuário u
    SUA_CHAVE_PRIVADA_AQUI
    -----END PRIVATE KEY-----`;
    
-### 6. Libera o Auth2 na conta de e-mail que criou no Google Cloud 
+### 5. Libera o Auth2 na conta de e-mail que criou no Google Cloud 
  1. Entra na conta que precisa liberar
  2. vai em contas de serviço
  3. configurações avançadas e ativa o Auth2
 
-### 5. Adicionar a biblioteca do Auth2 e API do Gmail
+
+### 6 Ativações 
+
+1. Ativar a delegação no google admin
+2. Ir no Google Cloud e ativar API do gmail
+3. Adicionar em Serviços a API Gmail
+
+
+### 7 Adicionar a biblioteca do Auth2 e API do Gmail
 
 1. ID: 1B7FSrk5Zi6L1rSxxTDgDEUsPzlukDsi4KGuTMorsTQHhGBzBkMun4iDF
 2. Ir no Google Cloud e ativar API do gmail

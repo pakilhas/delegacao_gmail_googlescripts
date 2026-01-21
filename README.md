@@ -82,3 +82,11 @@ Este projeto permite delegar o acesso a uma conta do Gmail para outro usuário u
 1. ID: 1B7FSrk5Zi6L1rSxxTDgDEUsPzlukDsi4KGuTMorsTQHhGBzBkMun4iDF
 2. Ir no Google Cloud e ativar API do gmail
 3. Adicionar em Serviços a API Gmail
+
+
+### 8 Ativar delegacao das contas dos usuarios no google admin
+
+1. apps/google workspace/gmail
+2. Ir no configuração de usuario
+3. delegação de e-mail
+https://admin.google.com/ac/apps/gmail/usersettings
